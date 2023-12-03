@@ -1,0 +1,28 @@
+* {
+  background-color: #232a57;
+  color: white;
+  transition-duration: 0.5s;
+}
+
+#servers {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 15%;
+}
+
+.select {
+    margin-bottom: 15px;
+    border: 1px solid white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#logout {
+    display: flex;
+    justify-content: left;
+    border: 1px solid white;
+    cursor: pointer;
+    border-radius: 5px;
+}

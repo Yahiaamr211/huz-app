@@ -1,0 +1,149 @@
+* {
+  background-color: #232a57;
+  color: white;
+  transition-duration: 0.5s;
+}
+
+#err {
+    display: none;
+}
+
+.window-controls {
+  position: fixed;
+  top: 0;
+  right: 0;
+  padding: 5px;
+}
+
+.window-controls button {
+  border-color: transparent;
+  border-radius: 10px;
+}
+
+.window-controls button:hover {
+  cursor: pointer;
+  border-color: white;
+}
+
+#greeting {
+  text-align: center;
+}
+.panel {
+  display: flex;
+  justify-content: center;
+  margin-top: 15%;
+}
+
+.panel label {
+  position: block;
+  pointer-events: none;
+  transition: 0.2s;
+}
+
+.panel input {
+  border: 1px solid white;
+  text-decoration: none;
+  border-radius: 14px;
+  text-align: center;
+  height: 20px;
+  width: 40%;
+  margin-left: 10px;
+}
+
+#saved-login {
+  /* display: none; */
+  position: absolute;
+  background-color: transparent;
+  min-width: 160px;
+  /* box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2); */
+  z-index: 1;
+  margin-left: 275px;
+  width: 40%;
+  /* overflow: auto; */
+  height: 30px;
+}
+ #saved-login ul {
+  list-style-type: none;
+  margin: 0;
+  color: white;
+  padding: 0;
+  overflow: auto;
+  height: 30px;
+
+  /* height: 8px; */
+  
+}
+
+#saved-login li {
+  padding: 8px 12px;
+  cursor: pointer;
+  color: transparent;
+  overflow: auto;
+  height: 20px;
+
+  /* height: 2px; */
+
+}
+
+#saved-login-ul::-webkit-scrollbar {
+  width: 0.5em;
+}
+
+#saved-login-ul::-webkit-scrollbar-thumb {
+  background-color: white;
+  height: 5px;
+  width: 1px;
+  border-radius: 16px;
+}
+
+/* #url:focus, #saved-login ul {
+  display: block;
+} */
+
+#url-id {
+  /* border: 1px solid white; */
+}
+
+.api {
+  display: flex;
+  justify-content: center;
+}
+
+.api input {
+  border: 1px solid white;
+  text-decoration: none;
+  border-radius: 14px;
+  text-align: center;
+  height: 20px;
+  width: 40%;
+  margin-left: 10px;
+}
+input:hover {
+  border-radius: 7px;
+  background-color: #232a41;
+}
+
+#submit {
+    display: block;
+    margin: 0 auto;
+    margin-top: 5%;
+    border: 1px solid white;
+    border-radius: 16px;
+    width: 90px;
+    height: 45px;
+}
+
+#save {
+  /* display: block; */
+  margin-left: 280px;
+  /* margin-top: 5%; */
+  /* border: 1px solid white; */
+  border-radius: 16px;
+
+}
+
+#submit:hover {
+    cursor: pointer;
+    background-color: #232a41;
+    border-radius: 10px;
+}

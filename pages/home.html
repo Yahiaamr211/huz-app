@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <!-- https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP -->
+    <meta
+      http-equiv="Content-Security-Policy"
+      content="default-src 'self'; script-src 'self'"
+    />
+    <title>Login</title>
+    <link rel="stylesheet" href="../assets/css/home.css" />
+  </head>
+  <body>
+    <h2 id="status"></h2>
+    <p id="err"></p>
+    <div class="window-controls">
+      <button id="minimize">-</button>
+      <button id="maximize">+</button>
+      <button id="close">x</button>
+    </div>
+    <form id="tform">
+      <h1 id="greeting">Hello Huz</h1>
+      <div class="panel">
+        <label for="url"
+        >Panel URL</label
+        >
+        <input
+        type="url"
+        name="url"
+        id="url"
+          placeholder="https://panel.example.com/"
+          pattern="https://.*"
+          size="30"
+          required
+        />
+      </div>
+      <div id="saved-login">
+        <ul id="saved-login-ul">
+          <!-- <li id="url-id">
+            hi1
+          </li>
+          <li id="url-id">
+            hi2
+          </li>
+          <li id="url-id">
+            hi3
+          </li> -->
+        </ul>
+      </div>
+      <br /><br />
+      
+      <div class="api">
+        <label for="client_api">Client API</label> <br />
+        <input
+        type="text"
+          name="client_api"
+          id="client_api"
+          placeholder="xxxxxxxxxxxxxxxxxxxxxxx"
+          />
+        </div>
+        <input type="checkbox" name="save" id="save" value="">
+        <label for="save"  id="save-label">Save credentials</label>
+        
+        <div class="servers"></div>
+        
+      <div id="buttons-container">
+        <button type="submit" id="submit">Submit</button>
+      </div>
+    </form>
+    <script src="../assets/js/servers.js"></script>
+    <script src="../assets/js/home.js" type="module"></script>
+  </body>
+</html>
